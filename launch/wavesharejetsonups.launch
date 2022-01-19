@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+    <node name="waveshareJetsonUps" pkg="waveshare_jetson_ups" type="waveshareJetsonUps.py" output="screen">
+    </node>
+</launch>
