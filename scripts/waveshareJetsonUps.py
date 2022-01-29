@@ -29,7 +29,7 @@ class WaveshareJetsonUPS():
             shunt_voltage = self._ina219.getShuntVoltage_mV() / 1000
             current = self._ina219.getCurrent_mA() / 1000
             power = self._ina219.getPower_W()
-            soc = (bus_voltage - 6) / 2.4 * 100
+            soc = round((bus_voltage - 6) / 2.4 * 100)
             if (soc > 100):
                 soc = 100
             if (soc < 0):
